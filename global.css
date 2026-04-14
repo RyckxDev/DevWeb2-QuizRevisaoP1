@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #10131a;
+    color: #e6e6e6;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+    line-height: 1.7;
+    display: flex;
+}
+
+.conteudo {
+    width: 100%;
+    max-width: 780px;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.cartao,
+.cartao-pergunta,
+.painel-resultado,
+.cartao-info,
+.cartao-api {
+    background: #1b2130;
+    border: 1px solid #2e364a;
+    border-radius: 6px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.45rem;
+    font-size: 0.7rem;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #2e364a;
+    border-radius: 6px;
+    background: #131927;
+    color: #e6e6e6;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.78rem;
+    outline: none;
+}
+
+.botao,
+.botao-enviar,
+.botao-primario,
+.botao-secundario,
+.botao-sair {
+    border: 1px solid #2e364a;
+    border-radius: 6px;
+    background: #2a3246;
+    color: #e6e6e6;
+    font-family: 'Press Start 2P', monospace;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagina-inicio {
+    padding: 2rem 1rem;
+}
+
+.pagina-inicio .conteudo {
+    max-width: 500px;
+}
+
+.selo {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.35rem 0.6rem;
+    border: 1px solid #2e364a;
+    background: #1b2130;
+    font-size: 0.65rem;
+}
+
+.subtitulo {
+    margin: 0.6rem 0 1.5rem;
+    font-size: 0.75rem;
+    color: #b8bfd0;
+}
+
+.cartao {
+    padding: 1.4rem;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.botao {
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.85rem;
+}
+
+.mensagem-erro {
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border: 1px solid #5d3a42;
+    background: #322229;
+    color: #f0d1d7;
+    border-radius: 6px;
+    font-size: 0.75rem;
+}
+
+.rodape-nota {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.68rem;
+    color: #b8bfd0;
+}
+
+.pagina-quiz {
+    padding: 2rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    max-width: 780px;
+    margin: 0 auto 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #2e364a;
+}
+
+.barra-topo-esq h2 {
+    font-size: 1rem;
+}
+
+.barra-topo-esq span {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    color: #b8bfd0;
+}
+
+.botao-sair {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.68rem;
+}
+
+.titulo-secao {
+    margin: 1.5rem 0 0.8rem;
+    font-size: 0.66rem;
+    color: #c8d4f2;
+}
+
+.cartao-pergunta {
+    margin-bottom: 0.9rem;
+    padding: 1.1rem;
+}
+
+.numero-pergunta {
+    margin-bottom: 0.5rem;
+    font-size: 0.62rem;
+    color: #b8bfd0;
+}
+
+.texto-pergunta {
+    margin-bottom: 0.8rem;
+    font-size: 0.78rem;
+}
+
+.lista-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid #2e364a;
+    border-radius: 6px;
+    background: #131927;
+    font-size: 0.72rem;
+}
+
+.opcao input[type="radio"],
+.opcao input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+}
+
+.area-envio {
+    margin-top: 1.8rem;
+    text-align: center;
+}
+
+.botao-enviar {
+    padding: 0.85rem 1.4rem;
+    font-size: 0.72rem;
+}
+
+.aviso-obrigatorio {
+    margin-top: 0.7rem;
+    font-size: 0.66rem;
+    color: #b8bfd0;
+}
+
+.pagina-resultado {
+    padding: 2rem 1rem 3rem;
+}
+
+.painel-resultado {
+    margin-bottom: 1.4rem;
+    padding: 1.4rem;
+    text-align: center;
+}
+
+.circulo-pontuacao {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 1rem;
+}
+
+.circulo-pontuacao svg {
+    transform: rotate(-90deg);
+}
+
+.trilha {
+    fill: none;
+    stroke: #2e364a;
+    stroke-width: 8;
+}
+
+.preenchimento-circulo {
+    fill: none;
+    stroke: var(--score-color, #6aa9ff);
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-dasharray: 345;
+    stroke-dashoffset: var(--score-offset, 345);
+}
+
+.rotulo-pontuacao {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numero-pontuacao {
+    font-size: 1.2rem;
+}
+
+.total-pontuacao,
+.texto-percentual,
+.etiqueta,
+.rotulo-api,
+.autor-api {
+    font-size: 0.66rem;
+    color: #b8bfd0;
+}
+
+.rotulo-desempenho {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+    color: var(--score-color, #6aa9ff);
+}
+
+.grade-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.grade-info {
+    margin-bottom: 1.3rem;
+}
+
+.cartao-info,
+.cartao-api {
+    padding: 1rem;
+}
+
+.valor,
+.frase-api {
+    margin-top: 0.3rem;
+    font-size: 0.75rem;
+}
+
+.cartao-api {
+    margin-bottom: 1.3rem;
+}
+
+.acoes {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.botao-secundario,
+.botao-primario {
+    flex: 1;
+    padding: 0.8rem;
+    font-size: 0.68rem;
+}
+
+@media (max-width: 768px) {
+    .barra-topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .grade-info {
+        grid-template-columns: 1fr;
+    }
+
+    .acoes {
+        flex-direction: column;
+    }
+}
+
